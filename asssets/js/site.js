@@ -39,7 +39,7 @@ ipVersions.forEach(ipVersion => {
                     let ajaxDuration = tempDate - this.start_time
                     let browserDuration = pElement.duration
                     let diff = ajaxDuration - browserDuration
-                    $(".client-" + ipVersion + "-latency").html(Math.round(browserDuration - diff) + ' ms');
+                    $(".client-" + ipVersion + "-latency").html(Math.round(browserDuration) + ' ms');
                     $( ".if-"+ipVersion+"-ok" ).prop( "disabled", false );
                 }
 
