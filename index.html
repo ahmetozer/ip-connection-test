@@ -6,8 +6,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css"
     integrity="sha512-oc9+XSs1H243/FRN9Rw62Fn8EtxjEYWHXRvjS43YtueEewbS6ObfXcJNyohjHqVKFPoXXUxwc+q1K7Dee6vv9g=="
     crossorigin="anonymous" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+    integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg=="
+    crossorigin="anonymous"></script>
   <title>Test IPv6 and IPv4 Connection</title>
-  <link rel="stylesheet" href="site.css">
+  <link rel="stylesheet" href="asssets/style/site.css">
+  <script src="asssets/js/config.js"></script>
+  <script src="asssets/js/site.js"></script>
 </head>
 
 <body class="bg-dark">
@@ -32,15 +37,20 @@
           <ul class="list-group list-group-flush ">
             <li class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">
               IP address :
-              <span>1.1.1.1</span></li>
+              <span class='client-IPv4-addr'></span></li>
             <li class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">
               Location
-              <span>TR</span>
+              <span class="client-IPv4-loc"></span>
+            </li>
+            <li class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">
+              Latency
+              <span class="client-IPv4-latency"></span>
             </li>
           </ul>
           <div class="card-footer">
-            <a href="#" class="btn btn-dark">Copy IPv4 Address</a>
-            <a href="#" class="btn btn-info looking-glass-button" style='display: none'>Looking Glass</a>
+            <button href="#" class="btn btn-dark if-IPv4-ok">Copy IPv4 Address</button>
+            <button href="#" class="btn btn-info if-IPv4-ok looking-glass-button" style='display: none'>Looking
+              Glass</button>
           </div>
         </div>
       </div>
@@ -56,15 +66,20 @@
           <ul class="list-group list-group-flush ">
             <li class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">
               IP address :
-              <span>1.1.1.1</span></li>
+              <span class='client-IPv6-addr'></span></li>
             <li class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">
               Location
-              <span>TR</span>
+              <span class="client-IPv6-loc"></span>
+            </li>
+            <li class="list-group-item list-group-item-dark d-flex justify-content-between align-items-center">
+              Latency
+              <span class="client-IPv6-latency"></span>
             </li>
           </ul>
           <div class="card-footer">
-            <a href="#" class="btn btn-dark">Copy IPv6 Address</a>
-            <a href="#" class="btn btn-info looking-glass-button" style='display: none'>Looking Glass</a>
+            <button href="#" class="btn btn-dark if-IPv6-ok" disabled>Copy IPv6 Address</button>
+            <button href="#" class="btn btn-info if-IPv6-ok looking-glass-button" style='display: none'>Looking
+              Glass</button>
           </div>
         </div>
       </div>
