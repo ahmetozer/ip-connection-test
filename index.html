@@ -25,7 +25,7 @@
     </div>
     <div class="row">
       <div class="col-lg-6 mb-4">
-        <div class="card bg-secondary text-white">
+        <div class="card bg-secondary text-white IPv4-border">
           <h5 class="card-header">IPv4 Connectivity</h5>
 
           <div class="card-body">
@@ -48,14 +48,14 @@
           </ul>
           <div class="card-footer">
             <button href="#" class="btn btn-dark if-IPv4-ok" onclick="copyFunction('IPv4Addr')" disabled>Copy IPv4 Address</button>
-            <button href="#" class="btn btn-info if-IPv4-ok looking-glass-button" style='display: none'>Looking
+            <button href="#" class="btn btn-info if-IPv4-ok looking-glass-button" style='display: none' onclick="redirectToLookingGlass('IPv4Addr')" disabled>Looking
               Glass</button>
           </div>
         </div>
       </div>
 
       <div class="col-lg-6 mb-4">
-        <div class="card bg-secondary text-white">
+        <div class="card bg-secondary text-white IPv6-border">
           <h5 class="card-header">IPv6 Connectivity</h5>
           <div class="card-body ">
             <p class="card-text">Internet Protocol version 6 (IPv6) is the most recent version of the Internet Protocol (IP), the communications protocol that provides an identification and location system for computers on networks and routes traffic across the Internet. <a class="badge badge-light" href="https://en.wikipedia.org/wiki/IPv6">More details</a></p>
@@ -75,7 +75,7 @@
           </ul>
           <div class="card-footer">
             <button href="#" class="btn btn-dark if-IPv6-ok" onclick="copyFunction('IPv6Addr')"  disabled>Copy IPv6 Address</button>
-            <button href="#" class="btn btn-info if-IPv6-ok looking-glass-button" style='display: none'>Looking
+            <button href="#" class="btn btn-info if-IPv6-ok looking-glass-button" style='display: none' onclick="redirectToLookingGlass('IPv6Addr')" disabled>Looking
               Glass</button>
           </div>
         </div>
