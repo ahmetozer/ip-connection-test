@@ -46,7 +46,7 @@ ipVersions.forEach(ipVersion => {
             $(".client-" + ipVersion + "-loc").html(data.inikv("loc"))
             performance.getEntries().forEach(pElement => {
                 
-                if (pElement.name == 'https://' + siteConfig.testHosts[ipVersion] + '/cdn-cgi/tracert') {
+                if (pElement.name == 'https://' + siteConfig.testHosts[ipVersion] + '/cdn-cgi/trace') {
                     let ajaxDuration = tempDate - this.start_time
                     let browserDuration = pElement.duration
                     let diff = ajaxDuration - browserDuration
